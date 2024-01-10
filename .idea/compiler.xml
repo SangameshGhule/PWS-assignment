@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="untitled" />
         <module name="LoopsPrograms" />
+        <module name="Assignment02" />
       </profile>
     </annotationProcessing>
   </component>
