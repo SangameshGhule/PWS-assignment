@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysExample/ArraysExample.iml" filepath="$PROJECT_DIR$/ArraysExample/ArraysExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment03/Assignment03.iml" filepath="$PROJECT_DIR$/Assignment03/Assignment03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArraysExample/Examples/Examples.iml" filepath="$PROJECT_DIR$/ArraysExample/Examples/Examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java pws.iml" filepath="$PROJECT_DIR$/.idea/Java pws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwoDArraysExamples/TwoDArraysExamples.iml" filepath="$PROJECT_DIR$/TwoDArraysExamples/TwoDArraysExamples.iml" />
     </modules>
   </component>
 </project>
