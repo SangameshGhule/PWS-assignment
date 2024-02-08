@@ -1,4 +1,4 @@
-package org.example;
+package org.BasicsArraysExamples;
 
 public class ArrayExample3CharMatch {
     public static void main(String[] args) {

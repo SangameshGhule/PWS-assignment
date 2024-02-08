@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/(Arrays and patterns).iml" filepath="$PROJECT_DIR$/(Arrays and patterns).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment01/(Java codes).iml" filepath="$PROJECT_DIR$/Assignment01/(Java codes).iml" />
       <module fileurl="file://$PROJECT_DIR$/ArraysExample/ArraysExample.iml" filepath="$PROJECT_DIR$/ArraysExample/ArraysExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment03/Assignment03.iml" filepath="$PROJECT_DIR$/Assignment03/Assignment03.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArraysExample/Examples/Examples.iml" filepath="$PROJECT_DIR$/ArraysExample/Examples/Examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java pws.iml" filepath="$PROJECT_DIR$/.idea/Java pws.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TwoDArraysExamples/TwoDArraysExamples.iml" filepath="$PROJECT_DIR$/TwoDArraysExamples/TwoDArraysExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoopsPrograms.iml" filepath="$PROJECT_DIR$/LoopsPrograms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringExamples/StringExamples.iml" filepath="$PROJECT_DIR$/StringExamples/StringExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment02 (2DArrays)/TwoDArraysExamples.iml" filepath="$PROJECT_DIR$/Assignment02 (2DArrays)/TwoDArraysExamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic sorting assignment/basic sorting assignment.iml" filepath="$PROJECT_DIR$/basic sorting assignment/basic sorting assignment.iml" />
     </modules>
   </component>
 </project>
