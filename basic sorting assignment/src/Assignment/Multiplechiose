@@ -1,0 +1,24 @@
+
+Q1. Which of the following(s) is/are true about bubble sort:
+ANS:  1,2,4
+
+Q2. What will the following array look like after one iteration of bubble sort [1,6,2,5,4,3].
+ANS: 3) [1,2,5,4,3,6]
+
+Q3. In which case does bubble sort works in the most efficient way:
+ANS: When the array is sorted in increasing order.
+
+Q6. Which of the following is true about selection sort:
+ANS: In each iteration we find the minimum element in the unsorted part of the array®
+
+Q7. Which of the following examples represent the worst case input for an insertion sort?
+ANS: array sorted in reverse order
+
+Q8. How many passes would be required during insertion sort to sort an array of 5 elements?
+ANS: 4
+
+Q11. What is an in-place sorting algorithm?
+ANS :  It needs O(1) or O(logn) memory to create auxiliary location
+
+Q12. In the following scenarios, when will you use selection sort?
+ANS : "A large file has to be sorteD"

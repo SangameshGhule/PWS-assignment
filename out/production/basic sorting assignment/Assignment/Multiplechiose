@@ -1,0 +1,19 @@
+
+Q1. Which of the following(s) is/are true about bubble sort:
+ANS:  1,2,4
+
+Q2. What will the following array look like after one iteration of bubble sort [1,6,2,5,4,3].
+ANS: 3) [1,2,5,4,3,6]
+
+Q3. In which case does bubble sort works in the most efficient way:
+ANS: When the array is sorted in increasing order.
+
+Q6. Which of the following is true about selection sort:
+
+Q7. Which of the following examples represent the worst case input for an insertion sort?
+Q4. Sort the array in descending order using Bubble Sort.
+Q5. Check if the given array is almost sorted. (elements are at-most one position away)
+2® It is stable sor1
+ ̄® It has a worst case space complexity of O(n¢
+»® It involves swapping of adjacent elementÀ
+® After each iteration, the greatest element is placed at the end of the array.
