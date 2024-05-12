@@ -9,13 +9,16 @@ public class PersonRepo {
 
     public static void main(String[] args) {
         ArrayList<Person> personArrayList = new ArrayList<>();
-        personArrayList.add(new Person("sangmesh", 150, 45000.0, "gsang@gmail.com", new ArrayList<>(Arrays.asList("cricket", "badminton", "movies"))));
+        personArrayList.add(new Person("Sangamesh", 150, 45000.0, "gsang@gmail.com", new ArrayList<>(Arrays.asList("cricket", "badminton", "movies"))));
         personArrayList.add(new Person("John", 25, 60000.0, "john@example.com", new ArrayList<>(Arrays.asList("reading", "running"))));
         personArrayList.add(new Person("Alice", 30, 75000.0, "alice@example.com", new ArrayList<>(Arrays.asList("swimming", "traveling"))));
         personArrayList.add(new Person("Bob", 22, 50000.0, "bob@example.com", new ArrayList<>(Arrays.asList("gaming", "running"))));
         personArrayList.add(new Person("Eva", 28, 80000.0, "eva@example.com", new ArrayList<>(Arrays.asList("hiking", "cooking"))));
         personArrayList.add(new Person("Mike", 35, 90000.0, "mike@example.com", new ArrayList<>(Arrays.asList("coding", "gaming"))));
         personArrayList.add(new Person("Sophie", 150, 70000.0, "sophie@example.com", new ArrayList<>(Arrays.asList("painting", "yoga"))));
+
+        Double v = personArrayList.stream().map(a -> a.salary).max(Comparator.comparing(a -> a)).get();
+        System.out.println("Max salary"+v);
 
         Optional<Person> collect9 = personArrayList.stream().filter(a->a.height>100).findAny();
         System.out.println(collect9.orElse(null));
