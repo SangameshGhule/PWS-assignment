@@ -30,6 +30,7 @@ public class PrintDuplicateWithoutSet {
                 System.out.println("Non-Duplicate: " + a[i]);
             }
         }
+
         System.out.println("Duplicates removed: " + Arrays.toString(b));
 
         int[] res = new int[a.length-count];

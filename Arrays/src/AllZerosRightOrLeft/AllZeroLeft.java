@@ -5,19 +5,16 @@ import java.util.Arrays;
 public class AllZeroLeft {
 
     public static void main(String[] args) {
-        int[] a = {4, 3, 2, 0, 2, 0, 3, 0, 0, 9};
+        int[] a = {4, 3, 2, 0, 2, 0, 3, 0, 0,8, 9};
         int[] r = new int[a.length];
-        int count = 0;
         int j = 0;
-        for (int i = 0; i < a.length; i++) {
-            int k = a[i];
+        for (int k : a) {
             if (k != 0) {
                 r[j] = k;
                 j++;
-            } else {
-                count++;
             }
         }
+        System.out.println(Arrays.toString(r));
         reverseArray(r, 0, j);
         reverseArray(r, 0, r.length);
     }

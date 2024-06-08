@@ -23,6 +23,7 @@ public class ArrayCopyMethods {
                 b[count++] = a[i];
             }
         }
+
         int[] res = new int[count];
         System.arraycopy(b, 0, res, 0, count);
         System.out.println(Arrays.toString(res));

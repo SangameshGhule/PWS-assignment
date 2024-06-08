@@ -5,7 +5,7 @@ public class ArraySortedOrNot {
     public static void main(String[] args) {
 
         int[] a = {1,4,3,2,8,5,5};
-        int[] c = {1,2,3,4,5,6,7,2};
+        int[] c = {1,2,3,4,5,6,7,4};
 
         boolean b =true;
 

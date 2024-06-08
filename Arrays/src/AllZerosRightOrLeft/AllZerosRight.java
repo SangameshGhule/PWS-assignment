@@ -12,6 +12,7 @@ public class AllZerosRight {
         int[] a = {4, 3, 2, 0, 2, 0, 3, 0, 0, 9};
         int[] r = new int[a.length];
         int j=0;
+
         for (int i = 0; i < a.length; i++) {
             int k = a[i];
             if (k != 0) {

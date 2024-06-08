@@ -14,7 +14,6 @@ public class RotateNnumberRightSide {
         int[] a = {5, 3, 7, 5, 3, 5, 7, 9, 1};
         int[] res = new int[a.length];
 
-        num = num % a.length;
         int[] temp = new int[num];
 
 //      System.arraycopy(a, 0, temp, 0, temp.length);

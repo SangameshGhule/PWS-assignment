@@ -21,6 +21,7 @@ public class PrintDuplicateUnsorted {
         int res = duplicate ? 0 : -1;
         System.out.println(res);
         System.out.println(integers);
+
     }
 }
 
