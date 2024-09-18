@@ -26,8 +26,8 @@ public class SingleStreamObject {
         System.out.println(collect);
 
         Predicate<Person> pre = (p)-> p.height>=30;
-        personArrayList.stream().filter(pre).toList().forEach(System.out::println);
-        personArrayList.stream().filter(pre).toList().forEach(System.out::println);
+        personArrayList.stream().filter(pre).collect(Collectors.toList()).forEach(System.out::println);
+        personArrayList.stream().filter(pre).collect(Collectors.toList()).forEach(System.out::println);
         personArrayList.stream().filter(a->a.height>=30).filter(a->a.salary>46000).forEach(System.out::println);
         personArrayList.stream().filter(a -> a.height >= 30 && a.salary > 46000).forEach(System.out::println);
         Map<String, List<String>> collect1 = personArrayList.stream().filter(a -> a.height >= 30).filter(a -> a.salary > 46000).collect(Collectors.toMap(person -> person.name, person -> person.hobbies));

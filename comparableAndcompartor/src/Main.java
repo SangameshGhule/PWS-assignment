@@ -10,6 +10,7 @@ public class Main{
         employees.add(new Example(3, "kanha", "kanha@gmail.com", 23525.78));
         employees.add(new Example(6, "ariyanka", "priyanka@gmail.com", 23525.78));
 
+//        Collections.sort(employees);
         Collections.sort(employees, new Example2());
 
         //sorting order

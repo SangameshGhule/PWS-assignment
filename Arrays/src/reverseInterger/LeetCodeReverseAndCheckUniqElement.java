@@ -20,7 +20,7 @@ public class LeetCodeReverseAndCheckUniqElement {
         System.out.println(integerArrayList);
         System.out.println(integersSet);
 
-        //Return if any reverse elemet present or not
+        //Return if any reverse element present or not
         boolean d = false;
         for (int ele : a) {
             if (ele > 10) {
@@ -44,5 +44,4 @@ public class LeetCodeReverseAndCheckUniqElement {
         }
         return r;
     }
-
 }

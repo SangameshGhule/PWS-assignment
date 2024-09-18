@@ -4,12 +4,12 @@ public class ArraySortedOrNot {
 
     public static void main(String[] args) {
 
-        int[] a = {1,4,3,2,8,5,5};
-        int[] c = {1,2,3,4,5,6,7,4};
+//        int[] c = {1,4,3,2,8,5,5};
+        int[] c = {1,2,3,4,5,6,7};
 
         boolean b =true;
 
-        for(int i = 1;i < c.length; i++){
+        for(int i = 1; i < c.length; i++){
             if(c[i] < c[i-1]){
                 b =false;
             }

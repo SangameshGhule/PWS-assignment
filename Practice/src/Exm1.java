@@ -1,18 +1,18 @@
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Exm1 {
-
     public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5, 6};
+        int[] res = new int[a.length];
+        int end = a.length - 1;
+        int start = 0;
 
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-
-        numbers.stream().sorted(Comparator.reverseOrder());
-
-        List<Integer> collect = numbers.stream().filter(a -> a > 5 && a % 2 == 0).collect(Collectors.toList());
-
-        System.out.println(collect);
+        for (int i = 0; i < a.length; i += 2) {
+            res[i] = a[end--];
+            if (i + 1 < a.length) {
+                res[i + 1] = a[start++];
+            }
+        }
+        System.out.println(Arrays.toString(res));
     }
 }

@@ -6,8 +6,8 @@ public class ReverseSingleInteger {
         int a = 78;
         int r = 0;
         while (a != 0) {
-            r = r * 10 + a % 10;
-            a /= 10;
+            r = r * 10 + a % 10; //8   80+7 =87
+            a /= 10; //7
         }
         System.out.println(r);
     }

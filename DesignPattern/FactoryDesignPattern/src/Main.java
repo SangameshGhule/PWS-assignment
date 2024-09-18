@@ -3,11 +3,14 @@ public class Main {
 //        Employee employee= new AndroidDeveloperSalary();
 //        System.out.println(employee.getSalary());
 
+        Employee employee= new AndroidDeveloperSalary();
+        employee.getSalary();
 
-        Employee webDeveloper = EmployeeFactoryMethods.getAllEmployees("WebDeveloper");
+
+        Employee webDeveloper = EmployeeFactoryMethods.getDesignationBAsedSalary("WebDeveloper");
         System.out.println(" Web Developer salary: " + webDeveloper.getSalary());
 
-        Employee webDeveloper1 = EmployeeFactoryMethods.getAllEmployees("AndroidDeveloperSalary");
+        Employee webDeveloper1 = EmployeeFactoryMethods.getDesignationBAsedSalary("AndroidDeveloperSalary");
         System.out.println(" AndroidDeveloper salary: " + webDeveloper1.getSalary());
     }
 }

@@ -7,9 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="StringExamples01" />
+        <module name="Java8SpringMicro" />
         <module name="(Arrays and patterns)" />
         <module name="(Java codes)" />
+        <module name="Exmaples1" />
         <module name="LoopsPrograms" />
+        <module name="Questions" />
+        <module name="SOLID" />
         <module name="Assignment01" />
         <module name="Assignment02" />
       </profile>
@@ -18,6 +23,7 @@
       <module name="(Arrays and patterns)" target="17" />
       <module name="(Java codes)" target="17" />
       <module name="LoopsPrograms" target="17" />
+      <module name="org.spel.expression" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

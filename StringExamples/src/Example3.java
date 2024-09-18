@@ -3,7 +3,7 @@
 public class Example3 {
 
     public static void main(String[] args) {
-        String a= "mayank";
+        String a= "IGI";
         int j = a.length()-1;
         boolean g = false;
         for(int i=0;i<a.length();i++){

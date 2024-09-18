@@ -1,9 +1,11 @@
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
-@lombok.Getter
+@Getter
 @lombok.Setter
-public class Example{
+public class Example implements Comparable<Example>{
     int id;
     String name;
     String email;
@@ -16,22 +18,6 @@ public class Example{
     }
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Double getSalary() {
-        return salary;
     }
 
     public void setName(String name) {
@@ -54,8 +40,8 @@ public class Example{
                 '}';
     }
 
-//    @Override
-//    public int compareTo(Example o) {
-//        return this.email.compareTo(o.email);  //based on name / email /
-//    }
+    @Override
+    public int compareTo(Example o) {
+        return this.email.compareTo(o.email);  //based on name / email /
+    }
 }

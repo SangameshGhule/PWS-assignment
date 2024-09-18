@@ -39,15 +39,15 @@ public class PersonRepo {
         List<Person> collect1 = personArrayList.stream().filter(a -> Objects.equals(a.height, person.height)).collect(Collectors.toList());
         System.out.println(collect1);
 
-        List<Person> collect3 = personArrayList.stream().filter(a -> Objects.equals(a.height, personArrayList.stream().map(b -> b.height).reduce(Integer::max).get())).toList();
+        List<Person> collect3 = personArrayList.stream().filter(a -> Objects.equals(a.height, personArrayList.stream().map(b -> b.height).reduce(Integer::max).get())).collect(Collectors.toList());
         System.out.println(collect3.size());
 
-        List<Integer> list = personArrayList.stream().map(a -> a.height).sorted(Comparator.reverseOrder()).toList();
+        List<Integer> list = personArrayList.stream().map(a -> a.height).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         System.out.println(list);
 
-        List<String> list1 = personArrayList.stream().filter(a -> a.hobbies.size() > 1).flatMap(b -> b.hobbies.stream()).toList();
+        List<String> list1 = personArrayList.stream().filter(a -> a.hobbies.size() > 1).flatMap(b -> b.hobbies.stream()).collect(Collectors.toList());
         System.out.println(list1);
-        System.out.println(list1.stream().distinct().toList());
+        System.out.println(list1.stream().distinct().collect(Collectors.toList()));
 
         System.out.println();
 
@@ -59,7 +59,7 @@ public class PersonRepo {
         List<List<String>> collect5 = personArrayList.stream().map(a -> a.hobbies).collect(Collectors.toList());
         System.out.println(collect5);
 
-        List<String> collect6 = collect5.stream().flatMap(Collection::stream).toList();
+        List<String> collect6 = collect5.stream().flatMap(Collection::stream).collect(Collectors.toList());
         Map<String, Long> collect7 = collect6.stream().collect(Collectors.groupingBy(s -> s, Collectors.counting()));
         System.out.println(collect7);
         collect7.forEach((key, value) -> {
