@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class AB {
     void method1() {
         // implementation for method1
@@ -29,5 +33,25 @@ public class Main {
         BC bc = new BC();
         bc.method2();
         bc.method1();
+
+
+        List<String> siblings = new ArrayList<>();
+        siblings.add("John");
+        siblings.add("Jane");
+
+        //original copy
+        User originalUser = new User("Alice", 30, siblings);
+
+        // Perform a shallow copy
+        User shallowCopyUser = originalUser.clone();
+
+        // Modify the original user's sibling list
+        originalUser.getSiblings().add("Jake");
+        shallowCopyUser.getSiblings().add("jjj");
+
+        // Display both the original and shallow copied users
+        System.out.println("Original User: " + originalUser);
+        System.out.println("Shallow Copy User: " + shallowCopyUser);
+
     }
 }

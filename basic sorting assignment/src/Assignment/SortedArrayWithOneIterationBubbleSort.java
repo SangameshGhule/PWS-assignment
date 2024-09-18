@@ -1,9 +1,12 @@
 package Assignment;
 
+import java.util.Arrays;
+
 public class SortedArrayWithOneIterationBubbleSort {
 
+
     public static void main(String[] args) {
-        int[] a = {2, 5, 8, 10, 7, 12, 15};
+        int[] a = {9, 2, 5, 8, 10, 7, 12, 15, 15};
         int n = a.length;
         int temp = 0;
         printArray(a);
@@ -18,15 +21,17 @@ public class SortedArrayWithOneIterationBubbleSort {
                 a[i] = temp;
                 break;
             }
-            count++;
         }
         System.out.println(count);
         printArray(a);
     }
 
     public static void printArray(int[] a) {
-        for (int ele : a) {
-            System.out.print(ele + " ");
+        int[] temp1 = new int[a.length];
+        for(int i=0;i<a.length-1;i++){
+            temp1[i] = a[i];
+            System.out.println(temp1[i]);
         }
+
     }
 }

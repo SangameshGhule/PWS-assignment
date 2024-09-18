@@ -11,9 +11,9 @@ public class Example1 {
             }
         }
         //one way of printing
-//        for(int[] ele:a){
-//            System.out.println(Arrays.toString(ele));
-//        }
+        for(int[] ele:a){
+            System.out.println(Arrays.toString(ele));
+        }
 
         //Another way of printing
 //        for(int i=0;i<a.length;i++){

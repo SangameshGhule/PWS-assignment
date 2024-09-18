@@ -27,7 +27,7 @@ public class StreamReduce {
         List<Integer> duplicates = collect.entrySet().stream()
                  .filter(entry -> entry.getValue() > 1)
                  .map(Map.Entry::getKey)
-                 .toList();
+                 .collect(Collectors.toList());
                 System.out.println("Duplicate elements: " + duplicates);
     }
 }

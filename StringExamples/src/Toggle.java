@@ -1,5 +1,7 @@
 //Input a string of length less than 10 and convert it into integer without using builtin function.
 
+import java.util.Arrays;
+
 public class Toggle {
 
     public static void main(String[] args) {
@@ -18,6 +20,29 @@ public class Toggle {
             }
         }
         System.out.println(sb);
+        
+        
+        
+        String d= "Alok Kumar";
+        String res = "";
+        for(int i=d.length()-1;i>=0;i--) {
+            res= res+ d.charAt(i);
+        }
+        System.out.println(res);
+
+        String[] parts = d.split(" ");
+        System.out.println(Arrays.asList(parts));
+        if (parts.length == 2) {
+            String result = parts[1] + " " + parts[0];
+            System.out.println(result);
+        } else {
+            System.out.println("Input string does not have exactly two words.");
+        }
+
+        
+
+
+
     }
 }
 

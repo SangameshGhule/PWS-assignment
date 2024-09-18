@@ -9,13 +9,16 @@ public class PersonRepo {
 
     public static void main(String[] args) {
         ArrayList<Person> personArrayList = new ArrayList<>();
-        personArrayList.add(new Person("sangmesh", 150, 45000.0, "gsang@gmail.com", new ArrayList<>(Arrays.asList("cricket", "badminton", "movies"))));
+        personArrayList.add(new Person("Sangamesh", 150, 45000.0, "gsang@gmail.com", new ArrayList<>(Arrays.asList("cricket", "badminton", "movies"))));
         personArrayList.add(new Person("John", 25, 60000.0, "john@example.com", new ArrayList<>(Arrays.asList("reading", "running"))));
         personArrayList.add(new Person("Alice", 30, 75000.0, "alice@example.com", new ArrayList<>(Arrays.asList("swimming", "traveling"))));
         personArrayList.add(new Person("Bob", 22, 50000.0, "bob@example.com", new ArrayList<>(Arrays.asList("gaming", "running"))));
         personArrayList.add(new Person("Eva", 28, 80000.0, "eva@example.com", new ArrayList<>(Arrays.asList("hiking", "cooking"))));
         personArrayList.add(new Person("Mike", 35, 90000.0, "mike@example.com", new ArrayList<>(Arrays.asList("coding", "gaming"))));
         personArrayList.add(new Person("Sophie", 150, 70000.0, "sophie@example.com", new ArrayList<>(Arrays.asList("painting", "yoga"))));
+
+        Double v = personArrayList.stream().map(a -> a.salary).max(Comparator.comparing(a -> a)).get();
+        System.out.println("Max salary"+v);
 
         Optional<Person> collect9 = personArrayList.stream().filter(a->a.height>100).findAny();
         System.out.println(collect9.orElse(null));
@@ -36,15 +39,15 @@ public class PersonRepo {
         List<Person> collect1 = personArrayList.stream().filter(a -> Objects.equals(a.height, person.height)).collect(Collectors.toList());
         System.out.println(collect1);
 
-        List<Person> collect3 = personArrayList.stream().filter(a -> Objects.equals(a.height, personArrayList.stream().map(b -> b.height).reduce(Integer::max).get())).toList();
+        List<Person> collect3 = personArrayList.stream().filter(a -> Objects.equals(a.height, personArrayList.stream().map(b -> b.height).reduce(Integer::max).get())).collect(Collectors.toList());
         System.out.println(collect3.size());
 
-        List<Integer> list = personArrayList.stream().map(a -> a.height).sorted(Comparator.reverseOrder()).toList();
+        List<Integer> list = personArrayList.stream().map(a -> a.height).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         System.out.println(list);
 
-        List<String> list1 = personArrayList.stream().filter(a -> a.hobbies.size() > 1).flatMap(b -> b.hobbies.stream()).toList();
+        List<String> list1 = personArrayList.stream().filter(a -> a.hobbies.size() > 1).flatMap(b -> b.hobbies.stream()).collect(Collectors.toList());
         System.out.println(list1);
-        System.out.println(list1.stream().distinct().toList());
+        System.out.println(list1.stream().distinct().collect(Collectors.toList()));
 
         System.out.println();
 
@@ -56,7 +59,7 @@ public class PersonRepo {
         List<List<String>> collect5 = personArrayList.stream().map(a -> a.hobbies).collect(Collectors.toList());
         System.out.println(collect5);
 
-        List<String> collect6 = collect5.stream().flatMap(Collection::stream).toList();
+        List<String> collect6 = collect5.stream().flatMap(Collection::stream).collect(Collectors.toList());
         Map<String, Long> collect7 = collect6.stream().collect(Collectors.groupingBy(s -> s, Collectors.counting()));
         System.out.println(collect7);
         collect7.forEach((key, value) -> {
